@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo CSS</title>
+<!--A forma mais usada para estilizar páginas .html é linkando um ou mais CSSs Externos-->   
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <h1>Testando Site com CSS</h1>
+    <h2>Entendendo Media Queries</h2>
+    <h3 class="game">Isso muda o jogo!</h3>
+    <p>Propriedade que controla o que acontece quando temos diferentes resoluções de tela, Media Queries se trata de responsabilidade responsiva, ou ajuste automatico do site para as mais diversas resoluções que existem, sendo as principais 5 (smartphone, tablet, laptop, desktop, tv), sempre importante lembrar e ter em mente na hora de criar um site que é muito mais fácil ajustar apenas a estrutura da página, ao invés de elemento por elemento, abaixo deixarei indicado o código padrão para ajuste dos mesmos:</p>
+    <p>• Smartphones (600px para baixo)<br>
+@media only screen and (max-width: 600px) {...}
+<br><br>
+• Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima)<br>
+@media only screen and (min-width: 600px) {...}<br><br>
+• Dispostivos Médios (Tablets deitados, 768px para cima) <br>
+@media only screen and (min-width: 768px) {...}
+<br><br>
+• Dispostivos Largos (laptops/desktops, 992px para cima)<br>
+@media only screen and (min-width: 992px) {...}
+<br><br>
+• Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima)<br>
+@media only screen and (min-width: 1200px) {...}</p>
+<br>
+<h2>Flexbox</h2>
+<p>Conjunto de regras para deixar o site responsivo de forma mais simples, uma propriedade relativamente nova que veio com o intuito de facilitar a organização de estruturas na tela, elemento a elemento, simplificando todo o ajuste de forma automatica, um tipo de display que se dominado, me fará estar um passo a frente, de tão importante que esta propriedade é, deixarei as principais características e funções em modo comentário a seguir, além de um exemplo prático</p>
+<!--display: flex; me habilita a ativar essa propriedade-->
+
+<!--flex-direction me faz ter o controle sobre a direção dos elementos, sendo em coluna ou em linha-->
+
+<!--flex-flow me faz controlar tanto a diração como o "embrulho" dos elementos com o wrap-->
+
+<!--justify-content me faz ajustar os elementos como se fosse um efeito de float, determinando como os elementos se organizam na horizontal, *tags especiais: space-around;space-between*-->
+
+<!--align-itens faz com que eu possa ajustar a organização dos itens na vertical, flex-start;flex-end ou center-->
+
+<!--align-content tem função parecida com o align itens, entretanto, esta consegue se adaptar mesmo com a mudança de dimensão, pois pega todo conteúdo e junta em um único bloco, enquanto o align itens trabalha em forma de elementos individuais-->
+
+<!--flex-gow: serve para ajustar de forma automatica o crescimento dos itens em relação a tela e a div principal, flex-grow: 1; (uniforme), quanto maior o número, maior também a diferença de um item sobre o outro, sendo 2 o dobro, 3 o triplo e assim por diante-->
+  <div class="flex-pai">
+    <div style="flex:15%">1</div>
+    <div style="flex:75%">2</div>
+    <div style="flex:10%">3</div>
+    <div style="flex:50%">4</div>
+    <div style="flex:50%">5</div>
+    <div style="flex:25%">6</div>
+    <div style="flex:25%">7</div>
+    <div style="flex:50%">8</div>
+  </div>
+<!--Lembrete importante: o Flexbox pode ser usado em conjunto com media queries, utilizado muito em ajuste de menus para diferentes resoluções, por exemplo-->
+<br><br><br><br><br><br>
+<p class="borda"><a href="outra.html" style="text-decoration:none">Ir para outra página</a></p><br><br>
+<p class="borda"><a href="propriedades.html" style="text-decoration:none">Ir para + Propriedades</a></p><br><br>
+<p class="borda"><a href="exemplo.html" style="text-decoration:none">Ir para Flexbox</a></p>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html Lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Tutorial">
+	<meta name="keywords" content="Aprender, Tutorial, HTML">
+	<meta name="author" content="Lucas Ramos">
+	<title>Tutorial Curso 5</title>
+	<style>
+	 * {
+	     box-sizing: border-box;
+	 }	 
+	 body {
+	     margin: 0;
+	 }	 
+	 .topo{
+	     background-color: gray;
+		 padding: 20px;
+		 text-align: center;
+	 }
+     .menu{
+         background-color: #333;
+       	 overflow:hidden;
+     }
+     .menu a{
+         color: white;
+         padding: 14px 16px;
+		 float: left;
+		 display: block;
+		 text-decoration: none;
+     }
+     .coluna-50{
+         float: left;
+		 width: 50%;
+		 padding:15px;
+     }	 
+	</style>
+</head>
+
+<body>
+
+    <!--O objetivo deste HTML é mostrar na prática como funcionam as tags e como posso dar uso a cada uma delas-->
+    <h1>AULA de HTML</h1>
+    
+	<!--Em todas as tags não semânticas, podemos usar a tag "div", pois ela é uma tag genérica no qual possui a mesma função-->
+	<!--As tags semânticas servem para facilitar o entendimento de determinada divisão, tanto para o navegador, quanto para o próprio programador, além de servir de critério para rankear melhor um site no google-->
+	<!--A tag "header" é uma semântica pois passa a informação do que ela é: O topo da página-->
+    <header class="topo">
+	    <h1>Topo</h1>
+		<p>Aqui a parte do topo</p>
+	</header>
+    <!--A tag "nav" é uma semântica pois passa a informação do que ela é: O menu da página-->
+    <nav class="menu">
+	    <a href="index.html">Link!</a>
+		<a href="index.html">Link!</a>
+		<a href="index.html">Link!</a>
+		<a href="index.html">Link!</a>
+	</nav> 
+	<!--A tag "section" é uma semântica pois passa a informação do que ela é: As colunas/secções da página-->
+	<section class="coluna-50">
+	    <h2>Coluna</h2>
+		<p>"Texto qualquer aqui."</p>
+		
+	</section>
+	
+	<section class="coluna-50">
+	    <h2>Coluna</h2>
+		<p>"Texto qualquer aqui."</p>
+		
+	</section>
+	<!--A tag "footer" também é uma tag semântica muito usada, embora não esteja presente neste exemplo, significa que ela é: O rodapé da página-->
+	<!--Existem várias outras tags semânticas como "aside","article","summary","title" & etc.. posso pesquisar sempre que achar necessário para contribuir com o conteúdo de minha página-->
+<br><br><br><br>
+<hr>
+<br>
+	<a href="index.html">Index!</a> &nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="sobre.html">Sobre!</a> &nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="forms.html">Formulário!</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="loga.html">Loga!</a>
+
+
+
+</body>
+
+</html>

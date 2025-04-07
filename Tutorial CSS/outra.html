@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outra Página</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--Se eu quiser estilizar somente esta página, posso criar um CSS Interno com uma tag "style", antes do fechamento da tag "head" e inserir os efeitos desejados-->
+    <style>
+        .h6 {
+             display:inline-block;
+             color:blueviolet;
+             width:31%;
+             max-width: 31%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Outra página</h1>
+    <h2>Tipos de propriedades de CSS:</h2>
+    <!--ID é um outro tipo de seletor que posso usar no CSS Externo que tem efeito similar ao CSS Inline, servindo para estilizar somente um item especifico que será "batizado" com um id único-->
+    <p><b>CSS:</b>Com as propriedades que aprenderemos aqui podemos utilizar o css em toda sua capacidade e estilizar nossa página de várias formas possíveis, começamos com a divisão de blocos, ao usar divs podemos criar "blocos" e ajustá-los a nossa maneira pela página, mas já vamos chegar lá, para já deixo só um exemplo de divisão de blocos.</p> 
+    <div class="block"><b>Preenchimento de texto</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis reiciendis ad illum, quia doloribus explicabo delectus. Tempora sunt aut culpa praesentium libero, itaque veritatis, adipisci iste commodi cum, alias incidunt. Eligendi consectetur repellendus doloribus et accusamus? Commodi tenetur ducimus necessitatibus sunt. Voluptatem dignissimos aperiam eos dicta repellat nisi modi? Eos perferendis facere voluptas ex distinctio aspernatur porro, totam facilis at.<b>Preenchimento de texto</b></div>
+   
+    <div class="block"><b>Preenchimento de texto</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis reiciendis ad illum, quia doloribus explicabo delectus. Tempora sunt aut culpa praesentium libero, itaque veritatis, adipisci iste commodi cum, alias incidunt. Eligendi consectetur repellendus doloribus et accusamus? Commodi tenetur ducimus necessitatibus sunt. Voluptatem dignissimos aperiam eos dicta repellat nisi modi? Eos perferendis facere voluptas ex distinctio aspernatur porro, totam facilis at.<b>Preenchimento de texto</b></div>
+
+    <p>Complementando o conteúdo, deixo aqui em forma de lembrete a propriedade width e height, que já é comum de se usar no html, mas que também é útil no css, principalmente o max-widht para ajustar o tamanho das páginas tanto para desktop, como também para dispositivos móveis!</p>
+    <!--Para estilizar somente uma tag em específico, de maneira mais simples, é utilizando o CSS Inline, onde introduzimos o "style" diretamente na tag que queremos-->   
+    <p class="h6"style="color:red">Testando CSS 1</p>
+    <p class="h6">Testando CSS 2</p>
+    <p class="h6"style="color:black">Testando CSS 3</p>
+    <!--A hierarquia de prioridades (efeitos de estilo na página) sempre será: CSS Inline > CSS Interno > CSS Externo--> 
+    <br><br> 
+    <p><b id="cor">Color:</b>Nome auto sugestivo, através dela posso alterar a coloração de qualquer item de minha página, digitando o nome da cor ou os respectivos códigos HEX ou RGB da tonalidade desejada.<br>
+    Ex1: color: red; Ex2: color: #FG0000.</p>
+    <!--Existem vários controles para os backgrounds, seja para ajuste de tamanho, imagem, repetições e etc..-->
+    <p id="back"><b>Background:</b>Propriedade usada para alterar o fundo de qualquer parte de minha página, seja ela um todo, ou apenas uma parte da mesma, para tal, posso utilizar de uma cor ou uma imagem.<br>
+    Ex1: background-color:white; Ex2: background-image:url("link");</p>
+    <!--Assim como outras propriedades, na border, também conseguimos editar preenchimento, váriar o estilo, entre outros..-->
+    <p id="border"><b>Border:</b>Outra propriedade com nome auto sugestivo, trata-se do estilo, ajustes e delimitações das bordas, caso queiramos usá-las.<br>Ex1: border:2px solid black; Ex2: border-radius:10px</p>
+    <p id="margem"><b>Margin:</b>Mais uma vez uma propriedade auto sugestiva, com ela podemos definiver a margem da página, não só na estrutura mas também a tudo que seja referente aos textos, imagens e a qualquer elemento inserido na página.<br>Ex1: margin: auto; Ex2: margin: 70px 150px 150px 70px</p>
+    <p id="preencher"><b>Padding:</b>Esta propriedade é muito similar a margin, sendo o diferencial dela o preenchimento do conteúdo interno, ao invés de afastar as extremidades da página, o padding ajusta o espaço dentro da própria área delimitada.<br>Ex1: padding:50px</p>
+    <p id="texto"><b>Text:</b>Mais uma propriedades importantes no CSS é a formatação, decoração e edição de textos, usadas com o código:<u>Text.</u><br>Já aprendi várias formatações no tutorial de<i>HTML</i>, entretanto, no CSS isto se expande a capacidade de editar vários textos com apenas um código, ou referência.<br>Ex1: text-align: center; text-decoration: none</p>
+    <p id="fontes"><b>Fonts:</b>Seguindo com as propriedades temos agora as fontes do texto, também é auto sugestivo, para quem está habituado a trabalhar com office, sabe da importância de saber escolher uma boa fonte, por padrão, o editor já indica vários tipos de fontes que podemos usar, entretanto, sempre posso ir ao google fonts buscar fontes diferenciadas para o meu projeto e importá-las usando url e depois definindo a "familía da fonte", estarei usando aqui nesse site como exemplo para referência posterior.<br>Ex1:font-family: Arial; font-size: 10px</p>
+    <p><b>Estilo de Links:</b>Fazer botões e estilizar links também é legal e importante dentro das propriedades css, assim como nas outras propriedades, usarei vários efeitos praticos:</p>
+    <!--Classe são uma forma de selector para que no CSS Externo eu consiga estilizar várias tags ao mesmo tempo-->    
+    <a class="botao1" href="index.html">Exemplo 1</a>
+    <a class="botao2" href="index.html">Exemplo 2</a>
+    <a class="botao3" href="index.html">Exemplo 3</a>
+    <a class="botao4" href="index.html">Exemplo 4</a>
+    <a class="botao5" href="index.html">Exemplo 5</a><br><br><br>
+    <div style="border: solid red"><p><b>Display:</b>Agora entrando para uma das propriedades mais importantes do css que são os controladores de layouts, para começar devo entender que os navegadores interpretam alguns códigos como displays do tipo bloco, por exemplo: as tags (div,h1 a h6,p,form,header,footer e section), o contrário disto temos as tags com o display padrão inline, como por exemplo: as tags <span id="inline">(a,span,images)</span> <br> Lembrando que isto é uma pré-definição, posso alterar cada uma destas propriedades de display no css, uma destas propriedades inclusive chama-se display:none; que a principio não parece tão útil,<br> mas que mais para a frente pode ser algo muito interessante a se usar, tomar nota de não confundir display:none com visibility:hidden.<br> Outra propriedade bem daora é a display:inline-block, que é um meio termo entre esses dois tipos de displays, me dando uma característica de display inline e a capacidade de manipulação do display block.</p></div>
+    <p><b>Especificidade CSS:</b>É o que usamos para indicar ao navegador qual efeito, estilo ou forma que será a prioridade para aquele elemento, página, imagem e etc..por norma a escala hierarquica é:<br> Tag > CSS Interno > CSS Externo.<br> Vale ressaltar que o indicador é muito importante, no caso de classes ou ids, para que a ordem de autoridade seja seguida: ID/Class > Indicador Comum (h1, ul, li e etc..), posso ser ainda mais específico ao citar classe + indicador, por exemplo: h1.exemplo, neste caso só o/os indicador(es) h1 da classe "exemplo" seriam estilizados com meu css, isto é útil para estilizar elementos únicos numa determinada div/classe/id sem ter que a obrigatoriedade de editar todos os elementos da mesma.</p>
+    <p><b>Regra: !Important</b>Serve para determinar para o navegador qual o elemento de nossa página é o mais importante no css, ignorando a sequência de importância que foi explicado em Especificidade e nos fazendo ter total controle sobre, para isto, basta introduzir !important a seguir do código css que desejamos, por exemplo:<br>Em um css externo, ao selecionar o seletor h1 e informar: color:green !important, não importa qual id/classe que seria a especificidade, com este código, consigo definir a prioridade eu mesmo.</p>
+    <!--Recurso a ser utilizado com cautela para não virar bagunça.-->
+    <p><b>Overflow:</b>Propriedade usada para ajustar comportamento de elementos dentro de uma div com tamanho delimitado, por exemplo:</p>
+    <div class="exemplo">
+    <p><b>overflow: scroll;</b>Ao indentificar que o conteúdo da div é maior do que o tamanho da mesma, adapta-o para uma caixa de rolamento para melhor visualização.</p>
+    <p><b>overflow: auto;</b>Também faz a mesma coisa que o scroll, a diferença é que no overflow auto, a propriedade entende que só precisar criar a caixa de rolamento se for necessário, se adaptando a quantidade de texto, ou seja, se por acaso os elementos deixarem de exister, o ajuste é feito automaticamente.</p>
+    <p><b>PS:</b>Esta propriedade só funciona se eu especificar uma altura máxima para a minha div, caso contrário, por padrão todo os elementos serão ajustados na div automaticamente conforme a necessidade</p>    
+    </div><br>
+    <p><b>Efeitos de Texto:</b>Propriedades de formatação de texto diferenciados e como controlá-los, muito útil para caso um determinado elemento de texto, título, artigo e etc, não se encaixe numa area esppecífica, usarei o espaçamento de um card, para um exemplo prático:</p><div class="efeito"><h2 style="margin-bottom:0;padding-bottom:0;" class="redux">Título extremamente longo para que possa servir de exemplo prático para espaçamento e como podemos ajustá-lo a nossa vontade.</h2><p class="redux"> *Preenchimento de texto apenas para ocupar espaço que será posteriormente ajustado**Preenchimento de texto apenas para ocupar espaço que será posteriormente ajustado**Preenchimento de texto apenas para ocupar espaço que será posteriormente ajustado**Preenchimento de texto apenas para ocupar espaço que será posteriormente ajustado**Preenchimento de texto apenas para ocupar espaço que será posteriormente ajustado*</p></div>
+    
+    <br><br><br><br>
+<p class="borda"><a href="index.html" style="text-decoration:none">Voltar para index</a></p><br><br>
+<p class="borda"><a href="propriedades.html" style="text-decoration:none">Ir para + Propriedades</a></p>
+</body>
+</html>

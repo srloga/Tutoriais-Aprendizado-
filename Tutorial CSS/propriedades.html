@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais Propriedades</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        ul{
+            background: black;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow:hidden;
+        }
+        li{
+            float: left;
+            color: red;
+        }
+        li a, .dropbtn{
+            display: inline-block;
+            color: whitesmoke;
+            padding: 14px 16px;
+            text-decoration: none;
+            text-align: center;
+        }
+        li a:hover, .drop:hover .dropbtn{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>+ Propriedades</h1>
+
+   <p><b>Positions:</b>Mais uma propriedade importante no css, positions, com ela podemos ajustar blocos e posicionamentos de divs e containers, basicamente, o código positions serve para adequar os elementos na tela de forma estilizada e uniforme, por padrão, tudo que eu inserir na página vem com a configuração static, a primeira forma de trabalhar com positions é usando position:relative; a partir daí posso dar coordenadas para o meu elemento, o informando onde quero que ele esteja na tela, mesmo que seja sobreposto a outros elementos (diferente da margem que "move" todo o conteúdo em bloco de uma vez) a partir daí vem vários outras funções para adequar meu elemento.<br>Ex1: positions:relative; z-index:-1; (serve para utilizar os elementos como camadas)</p><br>
+<div class="container">
+    <div class="div1">Primeira Div - Baixo</div>
+    <div class="div2">Segunda Div - Topo</div>
+    <div class="div3">Terceira Div - Centro</div>
+</div> 
+<div class="whats">
+    <img class="wpp" src="assets/wpplogo.png" width="80px">
+</div>
+<br><br><br>
+<p><b>Float:</b>Uma propriedade muito usada nos layouts para algumas situações específicas, faz uma efeito de "flutuar" algum elemento na tela, por exemplo:</p>
+<div class="flow">
+    <img width="300px" src="assets/trofatigers.png"/>
+    <p>Na prática podemos dizer que o float serve para que um determinado elemento fique em um lado específico da nossa div, como dá para notar, a imagem ficou a esquerda, enquanto este texto assumirá uma posição a partir do "término" da imagem, vale resaltar que a imagem meio que se desprende da nossa div, fica solta, flutuante, embora ainda esteja incorparada na mesma, é um efeito muito maneiro, fácil e que propõe um layout bacana para nossos projetos.</p><p><b>Preenchimento de texto</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. At iusto expedita excepturi. Harum ratione perspiciatis dignissimos rerum vero ullam necessitatibus expedita similique ad officia. Tempora laudantium minus nesciunt ipsum saepe!Lorem ipsum dolor sit amet consectetur adipisicing elit. At iusto expedita excepturi. Harum ratione perspiciatis dignissimos rerum vero ullam necessitatibus expedita similique ad officia. Tempora laudantium minus nesciunt ipsum saepe!Lorem ipsum dolor sit amet consectetur adipisicing elit. At iusto expedita excepturi. Harum ratione perspiciatis dignissimos rerum vero ullam necessitatibus expedita similique ad officia. Tempora laudantium minus nesciunt ipsum saepe! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit harum dicta, nisi ipsa ex ea libero distinctio necessitatibus architecto autem quos minima temporibus iure, blanditiis voluptatum voluptatibus rerum atque natus.<b>Preenchimento de texto</b></p><p style="clear:both"><br>Um detalhe interessante é que, por norma o texto "contorna" a imagem quando chega ao fim da mesma, a partir dai assume o papel padrão e o texto é transcrito para de baixo da imagem, entretanto, ao usar o código clear: both; posso fazer o texto ignorar minha flot e assumir desde já a posição abaixo da imagem, é um artifício interessante pois me faz ter mais liberdade com o meu texto, afinal ter uma boa diagramação é fundamental para qualquer wb site, Diagramação = distribuir os elementos gráficos no espaço limitado da página de forma coerente e esteticamente bonita.</p>
+</div>
+<p>Exemplo de Float para fazer menu:</p>
+<ul class="flow2">
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    <li style="float: right"><a href="#">Login</a></li>
+</ul><br>
+</div>
+
+<p><b>Opacity:</b>Nada mais é do que ajustar a transparência de uma determinada imagem, muito usado para fazer efeitos ao passar o mouse nos elemeentos dando uma certa estética aos nossos sites.</p>
+<!--Uma dica quando quiser usar imagem apenas para preencher alguma lacuna, algo porecido com o Lorem, é o site picsum.photos, nele basta digitar a dimensão da imagem que queres e automaticamente vai ser gerada uma fato aleatoria apenas para preencher aquele espaço-->
+<img class="img1" src="https://picsum.photos/200">
+<img class="img2" src="https://picsum.photos/200">
+<img class="img3" src="https://picsum.photos/200">
+<p><b>Efeito Dropdown:</b>É um efeito que muitos pensam apenas ser possível com o JavaScript, mas na verdade é possível fazer com CSS, basicamente é fazer abrir um menu com opções ao interagir com um determinado elemento, usarei o exemplo de float menu da nossa página para usar como exemplo:</p>
+<ul class="flow2">
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    <li class="drop">
+        <a class="dropbtn" href="#">Link</a>
+        <div class="drop-content">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </div>
+    </li>
+</ul> <br><br>
+<!--Para descobrir cores específicas de tamplates que vejo na net, posso utilizar a ferramenta online do "color picker screen", onde através de um print posso localizar qualquer código hexadecimal que eu quiser-->
+<p><b>Efeito Gradiente:</b>Efeito de transição de cores em um mesmo elemento, conhecido também como degradê de cores, dentro do css, pode ser feito incluindo cores e direções, o mais simples é o gradiente linear (degradê em linha) referenciado com o código background-image: linear-gradient(), dentro do parentese especifico as cores e direções do gradiente, ex: (to right, blue, red), significa que o gradiente será feito para a direita usando as cores azul e vermelho.<br> Comandos de Direção: * Simples: to right/left/top/bottom. * Diagonais:to bottom left/right, to top right/left.<br>Também posso direcionar a direção do meu gradiente linear através de graus, desta forma: (180deg), substituindo o número pelo ângulo desejado. outro tipo de gradiente é o radial,"radial-gradiente" ao invés de ser em linha, é feito em formato de circulo, funciona da mesma forma, única diferença é que no dragradê radial só podemos informar as cores desejadas, e a porcetagem das mesmas. </p>
+<div id="gradiente"></div>
+<p><b>Propriedade: Box-Shadow & Text-Shadow:</b>O text-shadow é bastante intuitivo e auto explicativo, trata-se de uma forma de pôr uma sombra no texto, nele definimos quantos pixéis queremos na horizontal, na vertical, um terceiro número para suavizar a sombra, caso necessário e por fim, qual cor queremos, ex: text-shadow: 2px 2px 4px blue, que na prática ficaria assim:<h3 class="tshadow">Exemplo de sombra de texto</h3><!--Múltiplas camadas de text shadow podem ser incorporadas, caso queira--><p>O box-shadow funciona de maneira muito parecida ao text-shadow, sendo a diferença que ao invés de contemplar apenas o texto, o efeito vai através de toda uma "caixa", uma div para ser mais exato, vejamos nesses exemplos, dois exemplos práticos de box shadow:<div class="box"></div><div class="inbox"></div><!--O segundo exemplo segue a regra "padrão" para efeitos de cards utilizados em páginas, vale a pena deixar salvo para trabalhos futuros-->
+<br><br><br>
+
+    <p class="borda"><a href="index.html" style="text-decoration:none">Ir para página principal</a></p><br><br>
+    <p class="borda"><a href="outra.html" style="text-decoration:none">Ir para outra página</a></p>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo CSS</title>
+    <style>
+        *{
+            box-sizing:border-box
+        }
+        body{
+            margin:0;
+        }
+        .header{
+            background: rgb(172, 172, 172);
+            padding: 80px;
+            text-align: center;
+            color: #0a0a0a;
+        }
+        h1,h2{
+            color:#000000;
+            text-align: center;
+            margin-bottom: 50px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar{
+            display: flex;
+            justify-content: center;
+            background: rgb(11, 11, 11);
+        }
+        .navbar a{
+            color: #ffffff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover{
+            background: gray;
+            color: rgb(254, 254, 254);
+            font-weight: bold;
+        }
+        @media screen and (max-width:700px){
+            .navbar{
+                flex-direction: column;
+            }
+        }
+        .corpo{
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .card{
+            flex: 48%;
+            background: #ccc;
+            height: 300px;
+            margin: 1%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Flexbox</h1>
+        <p>Este é um Layout Flexível</p>
+    </header>
+    <nav class="navbar">
+        <a href="index.html">Página Principal</a>
+        <a href="outra.html">Outra Página</a>
+        <a href="propriedades.html">+ Propriedades</a>
+        <a href="exemplo.html">Refresh</a>
+    </nav>
+    <div class="corpo">
+        <div class="card">
+
+        </div>
+        <div class="card">
+
+        </div>
+    </div>
+
+
+
+
+</body>

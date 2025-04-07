@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html Lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Tutorial">
+	<meta name="keywords" content="Aprender, Tutorial, HTML">
+	<meta name="author" content="Lucas Ramos">
+	<title>Tutorial Curso 4</title>
+</head>
+
+<body>
+
+    <!--O objetivo deste HTML é mostrar na prática como funcionam as tags e como posso dar uso a cada uma delas-->
+    <h1>AULA de HTML</h1>
+    <h2>Formulários</h2>
+	<p>Dados de entrada e interação entre usuário e página.</p>
+    
+	<form>
+	    <!--Primeiro serão os comandos do tipo Input-->
+	    <label for="nome">Nome:</label>
+		<input id="nome" type="text" placeholder="Digite seu nome aqui" required>
+	    <br><br>
+		
+		<label for="mail">E-mail:</label>
+		<input id="mail" type="email" placeholder="Digite o seu e-mail" required>
+	    <br><br>
+		
+		<label for="senha">Senha:</label>
+		<input id="senha" type="password" placeholder="Digite sua senha" required>
+	    <br><br><br>
+		
+		<input type="radio" id="acc" name="human" value="aceito"> 
+		<label for="acc">Aceito as regras de utilização de uso de dados.</label>
+		<br><br>
+		<input type="radio" id="noacc" name="human" value="naoaceito">
+		<label for="noacc">Não aceito as regras de utilização de uso de dados.</label>
+		
+		<br><br>
+		<h4>Não sou um robô</h4>
+		Marque as escolhas corretas:<br><br><br>
+        <input type="checkbox" name="item1" value="itgre">
+        <label for="itel1">Itgre</label><br><br>		
+	    <input type="checkbox" name="item2" value="greti">
+		<label for="itel2">Greti</label><br><br>
+		<input type="checkbox" name="item3" value="tigre">
+		<label for="itel3">Tigre</label><br><br>
+		<input type="checkbox" name="item4" value="obcra">
+        <label for="itel4">Obcra</label><br><br>		
+	    <input type="checkbox" name="item5" value="acrob">
+		<label for="itel5">Acrob</label><br><br>
+		<input type="checkbox" name="item6" value="cobra">
+		<label for="itel6">Cobra</label><br><br>
+		
+		<br><br>
+		<input type="submit" value="Enviar Formulário">
+		
+		<br><br>
+		<!--Agora os comandos do tipo Select-->
+		<p>Escolha uma cor:</p>
+		<select name="cores">
+		      <option selected disabled value="">Selecione uma cor</option>
+		      <option value="vermelho">Vermelho</option>
+		      <option value="amarelo">Amarelo</option>
+		      <option value="azul">Azul</option>
+			  <option value="verde">Verde</option>
+			  <option value="preto">Preto</option>
+		</select>
+	    <br><br>
+		<p>Deixe sua mensagem:</p>
+		<textarea name="mensagem" placeholder="Digite aqui sua mensagem" rows="5" cols="40"></textarea>
+	    <br><br>
+	
+	</form>
+	<button>Submeter</button>
+	
+<br><br>
+<hr>
+<br>
+
+<a href="index.html">Index!</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="sobre.html">Sobre!</a> &nbsp;&nbsp;&nbsp;&nbsp
+<a href="loga.html">Loga!</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="semantica.html">Div & HTML Semântico!</a>
+</body>
+
+</html>

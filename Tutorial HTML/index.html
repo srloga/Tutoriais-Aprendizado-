@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html Lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Tutorial">
+	<meta name="keywords" content="Aprender, Tutorial, HTML">
+	<meta name="author" content="Lucas Ramos">
+	<title>Tutorial Curso</title>
+</head>
+
+<body>
+
+    <!--O objetivo deste HTML é mostrar na prática como funcionam as tags e como posso dar uso a cada uma delas-->
+    <h1>AULA de HTML</h1>
+	<p>As ULs são tags para fazer listas não ordenadas, e OL para listas ordenadas, mais abaixo vou usá-las enquanto explicos outras paradas também.</p>
+	
+	<h5>Meta TAGS</h5>
+	<p>São comandos dados para o navegador, tais como:</p>
+	<ol>
+	   <li>Linguagem do texto</li>
+	   <li>Escala / Proporção</li>
+	   <li>Descrição da página</li> 
+	   <li>Autor e etc..</li>
+	</ol>  
+	
+	<h2>Formatação de Texto</h2>
+	<p>Tags para modificar textos:</p>
+	<!--Aqui as palavras dizem o que está acontecendo com elas-->
+	<ul>
+	   <li><b>Negrito</b></li>
+	   <li><i>Itálico</i></li>
+	   <li>Linha para separar secções ↓</li> 
+	   <hr></hr>
+	   <li>Pular uma linha. <br> Diferente do parágrafo, que monta toda uma estrutura em bloco,<br>o BR serve para pular linhas de uma forma mais "livre", podendo até ser usado de forma consecutiva<br><br>assim, posso pular quantas linhas eu quiser.</li>
+	   <li><u>Sublinhado</u></li>
+	   <li><small>Letra pequena.</small></li>
+	   <li><del>Riscado</del></li>
+	   <li>Exponeciais: 2<sup>10</sup>
+		               2<sub>10</sub></li>
+		<li><mark>Marcado</mark></li>
+	</ul>  
+	<small>P.S: as Tag BR, SMALL & MARK são recursos, entretanto, na parte de CSS, tanto o tamanho, espaçamento de textos e ainda mais coisas podem ser trabalhados de melhor forma.</small>
+	
+	<h3>Elementos de Citação</h3>
+	<p>Tags para abreviar, citar frases de terceiros e outros.</p>
+	<!--Aqui funciona diferente pois é preciso de um exemplo maior para explicar o efeito, além da própria palavra-->
+	<ul>
+	   <li>Siglas, por exemplo: <abbr title="Hyper Text Markup Language">HTML</abbr></li>
+	   <li>Endereço, por exemplo: <address>Rua do Exemplo, 123, Centro, <abbr title="Where Judas Lost The Boots">WJLTB</abbr></address> </li>
+	   <li>Título de obra, por exemplo:<br> A série da Netflix chamada <cite>Quarterback</cite> é espetacular!</li> 
+	   <li>Citação curtas, por exemplo:<br> No SuperBowl LVI o QB do Chiefs perguntou ao seu treinador: <q>We have time to run WASP?</q></li>
+	   <li>Texto destacados de artigos, por exemplo:<br> O treinador concordou com a pergunta do Mahomes e em seguida, numa <blockquote>fucking 3rd para 17yds!!</blockquote>a jogada deu muito certo e o passe foi conectado mudando assim toda a história daquele jogo.</li>
+	   <li>Mudar direção do texto, por exemplo:<br> Após aquela jogada os Chiefs pareciam ser outra equipe totalmente diferente, esse é o poder de um QB de Elite, a capacidade de <bdo dir="rtl">mudar o clima e a direção do jogo, liderando suas tropas a vitória.</li>
+	</ul> 
+    <!--Uma parte muito importante e uma das mais daoras de fazer!
+	Lembrando que todos os htmls teram que estar numa mesma pasta para a ligação ser direta, caso contrário, terei que introduzir o nome da pasta ou os ..
+	ex: <a href="site pessoal/index.html"> ou <a href="../index.html"-->
+    <h4>Links</h4>
+    <p><a href="https://google.com" target="_blank">Ir para o Google</a> <br>Este é um caminho(URL,LINK) absoluto.
+	<p><a href="sobre.html">Ir para Tutorial 2</a> <br>Este é um caminho relativo, pois leva a outra aréa do mesmo site.
+	
+	<h3>Imagens</h3>
+	<!--Funciona de forma muito parecida com os Links, no caminho relativo, devo buscar a/as imagens na mesma pasta do html ou devo direcionar o caminho até ela
+	usando a ferramenta "abrir imagem em outra aba" posso obter o link para um caminho absoluto, width = largura, height = altura, ambas em pixels-->
+	<p>Sempre bom lembrar que para um uso profissional, é necessário ter direitos sobre as imagens usadas ou seja, no caso de não possuir imagens e ter que procurar na net, sempre buscar em sites gratuitos como pexels, freepik e etc..
+	<p><a href="Loga.html"><img src="assets/trofatigers.png" width="300" height="300" alt="logo da equipa Trofa Tigers"></a>
+	<!--Easy Resize para diminuir o tamanho das imagens, Photopea para editar e criar imagens PNG, Flaticon para buscar ícones, Image Map Generator para criar links através de determinados pontos na imagem-->
+	
+	<p>Agora vou fazer um texto de exemplo com o uso de todas as TAGS aprendidas até agora:</p>
+	<!--Exemplo definitivo de texto com tudo que foi aprendido até agora-->
+	<h2>Kansas City Chiefs</h2>
+	<hr></hr>
+	<p>História da melhor equipe de futebol americano:</p>
+	O <strong><u>Kansas City Chiefs</u></strong> é um time profissional de futebol americano sediado em <address>Kansas City, Missouri.</address><br>Os Chiefs competem na <abbr title="National Football League">NFL</abbr> como um clube membro da divisão oeste da <abbr title="American Football Conference">AFC</abbr>.<br> A equipe foi fundada em <i>1960</i> como <b>Dallas Texans</b> pelo empresário <cite>Lamar Hunt</cite> e foi membro fundador da <abbr title="American Football League">AFL</abbr>.<br> Em <i>1963</i>, a equipe mudou-se para Kansas City e assumiu seu nome atual. <blockquote>Os Chiefs se juntaram à NFL como resultado da<br>fusão em <i>1970</i>.<sup>[1]</sup></blockquote>
+    <p>A equipe está avaliada em mais de <u>US $ 2 bilhões</u>.<sup>[2]</sup> O filho de <cite>Hunt, Clark</cite>, é presidente e CEO.<br> Enquanto as participações de Hunt passaram coletivamente para sua viúva e seus filhos após sua<br> morte em 2006, Clark disse: <q>A partir de hoje represento os Chiefs em todas as reuniões da liga</q>, ele possui autoridade máxima em mudanças.</p>
+    <p>Os <a href="https://www.chiefs.com/" target="_blank">Chiefs</a> venceram três campeonatos da <abbr title="American Football League">AFL</abbr> em <i>1962, 1966 e 1969</i><sub>[3]</sub> e se tornaram a segunda equipe da <abbr title="American Football League">AFL</abbr> <del>(depois do New York Jets)</del><br> a derrotar uma equipe da <abbr title="National Football League">NFL</abbr> em um Super Bowl quando derrotaram o <small>Minnesota Vikings</small> no <mark>Super Bowl IV</mark>.<br> Os <b>Chiefs</b> foram a segunda equipe, depois do Green Bay Packers, a aparecer em mais de um Super Bowl (e a primeira equipe da <abbr title="American Football League">AFL</abbr> a fazê-lo)<br> e a primeira a aparecer em duas décadas diferentes.<hr></hr>
+
+    <!--Vai dar tudo certo, se dedica, trabalha, confia em ti próprio e não desiste!--> 
+    <p>Acima deste paragráfo tem um comentário!</p> 
+	
+	<hr>
+	<p><a href="sobre.html">Sobre!</a> &nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="forms.html">Formulário!</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="loga.html">Loga!</a>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="semantica.html">Div & HTML Semântico!</a></p> 
+	
+
+</body>
+
+</html>
