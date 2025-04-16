@@ -1,6 +1,6 @@
 # Angular
 ## Nivel 1
-- [ ] **HTML - Fundamentos**:
+- [X] **HTML - Fundamentos**:
    - HTML é uma linguagem de marcação que define a estrutura do seu conteúdo. HTML consiste em uma série de elementos que você usa para mostrar algo de uma determinada maneira ou agir de uma certo modo. As tags podem criar um hiperlink de uma palavra ou imagem para outro lugar, podem colocar palavras em itálico, podem aumentar ou diminuir a fonte e assim por diante.
    - Aprender quais tags são necessárias para um HTML básico
    - Criar um parágrafo de texto
@@ -13,7 +13,7 @@
    - Conectar com um arquivo de CSS
    - Criar uma tabela
    - Adicionar IDs e classes
-- [ ] **CSS - Fundamentos**:
+- [X] **CSS - Fundamentos**:
    - Cascading Style Sheets (CSS) é uma linguagem usada para descrever a apresentação de um documento escrito em uma linguagem de marcação como HTML ou XML. CSS pode ser usado para estilos de texto de documentos muito básicos — por exemplo, para alterar a cor e o tamanho de títulos e links. Ele pode ser usado para criar um layout — por exemplo, transformar uma única coluna de texto em um layout com uma área de conteúdo principal e uma barra lateral para informações relacionadas. Pode até ser usado para efeitos como animações.
    - Aprender a estrutura visual de uma página, com 'margin' e 'padding'
    - Estabelecer o tamanho com 'width' e 'height'
@@ -28,7 +28,7 @@
    - Aprender box-sizing
    - Aprender Flexbox
    - Aprender Grid
-- [ ] **JavaScript - Fundamentos**:
+- [X] **JavaScript - Fundamentos**:
    - JavaScript é a linguagem de programação mais popular do mundo e é uma das principais tecnologias da World Wide Web, juntamente com HTML e CSS. Ela possui tipagem dinâmica, orientação a objetos baseada em protótipos e funções de primeira classe. Ela é multi-paradigma e suporta estilos de programação orientados a eventos, funcionais e imperativos.
    - Conhecer os tipos primitivos
    - Declarar variáveis, considerando a diferença entre 'var', 'let' e 'const'
@@ -41,14 +41,14 @@
    - Fazer um CRUD
    - Obter dados de uma API
    - Fazer chamadas assíncronas usando 'Async/Await', 'Promise', etc
-- [ ] **TypeScript - Fundamentos**:
+- [X] **TypeScript - Fundamentos**:
    - TypeScript é uma linguagem de programação fortemente tipada que se baseia em JavaScript.
    - Entender a fundo o que são tipos e a importância da tipagem
    - Aprender o que é o TypeScript, por que foi criado, como ele funciona e sua relação com o JavaScript
    - Conhecer as ferramentas do TypeScript (integração com o editor de código, verificador estático e compilador)
    - Escrever código em TypeScript com suas ferramentas (interfaces, enum, decorators, etc)
    - Desenvolver aplicações em TypeScript
-- [ ] **Angular - Fundamentos**:
+- [X] **Angular - Fundamentos**:
    - Angular é uma framework de construção de aplicações e plataforma de desenvolvimento construído em TypeScript para criar aplicações eficientes e sofisticadas de página única (SPA).
    - Construir interfaces utilizando HTML, CSS e TypeScript
    - Criar aplicações SPA
